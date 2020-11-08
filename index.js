@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
    let data=networkInterfaces();
    let obj={
        processId:process.pid,
-       ip:data.wlp2s0
+       ip:data
    }
    res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(obj))
